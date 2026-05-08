@@ -1,12 +1,12 @@
-#Visão Geral do Sistema
+# Visão Geral do Sistema
 
-##1. Contexto do Sistema
+## 1. Contexto do Sistema
 
 O ScadaBR-CTI é uma solução de monitoramento e análise de dados operacionais baseada em dados provenientes do sistema supervisório ScadaBR. O sistema foi desenvolvido para suportar análise histórica de variáveis operacionais, com foco em eficiência energética, desempenho de infraestrutura e suporte à tomada de decisão técnica.
 
 A arquitetura integra coleta, persistência e processamento de dados estruturados, permitindo exploração analítica em ambiente R.
 
-##2. Objetivo Técnico
+## 2. Objetivo Técnico
 
 O sistema tem como objetivo principal a transformação de dados operacionais brutos em indicadores analíticos estruturados, permitindo:
 
@@ -17,7 +17,7 @@ Identificação de padrões sazonais e comportamentais
 Suporte à detecção de anomalias operacionais
 Geração de indicadores para eficiência energética
 
-##3. Arquitetura do Sistema
+## 3. Arquitetura do Sistema
 
 A arquitetura é composta por três camadas funcionais:
 
@@ -25,11 +25,11 @@ A arquitetura é composta por três camadas funcionais:
 
 Dados são coletados via sistema ScadaBR, responsável pela leitura de sensores e dispositivos em campo, operando como interface entre o ambiente físico e o sistema de informação.
 
-###3.2 Camada de Persistência
+### 3.2 Camada de Persistência
 
 Os dados são armazenados em banco de dados relacional, estruturados em séries temporais e tabelas normalizadas, permitindo consultas históricas e agregações por diferentes granularidades temporais.
 
-###3.3 Camada de Processamento e Visualização
+### 3.3 Camada de Processamento e Visualização
 
 O processamento é realizado em R, com pipeline de transformação, limpeza e agregação dos dados. A visualização é implementada via Shiny, com suporte a gráficos dinâmicos e consultas interativas.
 
