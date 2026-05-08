@@ -6,6 +6,11 @@ O ScadaBR-CTI é uma solução de monitoramento e análise de dados operacionais
 
 A arquitetura integra coleta, persistência e processamento de dados estruturados, permitindo exploração analítica em ambiente R.
 
+## Diagrama de Blocos
+<p align="center">
+  <img src="img/Daigrama de Blocos.jpeg" alt="Fluxograma ScadaBR CTI" width="100%">
+</p>
+
 ## 2. Objetivo Técnico
 
 O sistema tem como objetivo principal a transformação de dados operacionais brutos em indicadores analíticos estruturados, permitindo:
@@ -21,7 +26,7 @@ Geração de indicadores para eficiência energética
 
 A arquitetura é composta por três camadas funcionais:
 
-###3.1 Camada de Aquisição de Dados
+### 3.1 Camada de Aquisição de Dados
 
 Dados são coletados via sistema ScadaBR, responsável pela leitura de sensores e dispositivos em campo, operando como interface entre o ambiente físico e o sistema de informação.
 
@@ -33,7 +38,7 @@ Os dados são armazenados em banco de dados relacional, estruturados em séries 
 
 O processamento é realizado em R, com pipeline de transformação, limpeza e agregação dos dados. A visualização é implementada via Shiny, com suporte a gráficos dinâmicos e consultas interativas.
 
-##4. Fluxo de Dados
+## 4. Fluxo de Dados
 
 O pipeline de dados segue a seguinte sequência:
 
@@ -44,7 +49,8 @@ Pré-processamento (limpeza, normalização e tratamento de missing data)
 Agregação temporal e construção de métricas
 Geração de indicadores operacionais
 Visualização via dashboard interativo
-5. Modelagem Analítica
+
+## 5. Modelagem Analítica
 
 O sistema opera principalmente sobre séries temporais estruturadas, permitindo:
 
@@ -53,7 +59,8 @@ Comparações interperíodo (baseline vs atual)
 Análise de tendência e sazonalidade
 Segmentação por pontos de medição
 Correlação entre variáveis operacionais
-6. Indicadores Derivados
+
+## 6. Indicadores Derivados
 
 Os principais indicadores gerados incluem:
 
@@ -70,7 +77,8 @@ tidyverse (transformação de dados)
 lubridate (tratamento temporal)
 ggplot2 / plotly (visualização)
 Shiny (interface analítica interativa)
-8. Integração com o Repositório
+
+## 8. Integração com o Repositório
 
 Este repositório centraliza:
 
@@ -79,8 +87,3 @@ Modelos de análise em R
 Dashboards interativos
 Documentação técnica do pipeline
 Estrutura do banco de dados e consultas
-
-## Diagrama de Blocos
-<p align="center">
-  <img src="img/Daigrama de Blocos.jpeg" alt="Fluxograma ScadaBR CTI" width="100%">
-</p>
