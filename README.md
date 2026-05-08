@@ -92,37 +92,37 @@ Os principais indicadores gerados incluem:
 
 ## 8 Bibliotecas
   
-**shiny:** É o motor principal; permite criar aplicativos web interativos usando apenas a linguagem R.
+- **shiny:** É o motor principal; permite criar aplicativos web interativos usando apenas a linguagem R.
 
-**shinythemes:** Fornece "temas" visuais prontos para mudar as cores e fontes do dashboard com um clique.
+- **shinythemes:** Fornece "temas" visuais prontos para mudar as cores e fontes do dashboard com um clique.
 
 ### 8.1 Conexão e Banco de Dados
 
-**DBI:** Funciona como uma interface padrão para comunicação entre o R e diversos sistemas de bancos de dados.
+- **DBI:** Funciona como uma interface padrão para comunicação entre o R e diversos sistemas de bancos de dados.
 
-**RMySQL:** É o driver específico que permite ao R "falar" com o banco de dados MySQL/MariaDB do seu projeto.
+- **RMySQL:** É o driver específico que permite ao R "falar" com o banco de dados MySQL/MariaDB do seu projeto.
 
 ### 8.2 Manipulação e Limpeza de Dados
 
-**dplyr:** Ferramenta essencial para manipular dados (filtrar linhas, selecionar colunas, agrupar e realizar cálculos).
+- **dplyr:** Ferramenta essencial para manipular dados (filtrar linhas, selecionar colunas, agrupar e realizar cálculos).
 
-**tidyr:** Serve para organizar dados "bagunçados", permitindo remodelar tabelas (ex: transformar colunas em linhas).
+- **tidyr:** Serve para organizar dados "bagunçados", permitindo remodelar tabelas (ex: transformar colunas em linhas).
 
 ### 8.3 Gestão de Tempo e Datas
 
-**lubridate:** Facilita a leitura e operações matemáticas com datas (ex: somar dias ou extrair o mês de um timestamp).
+- **lubridate:** Facilita a leitura e operações matemáticas com datas (ex: somar dias ou extrair o mês de um timestamp).
 
-**hms:** Biblioteca especializada em tratar variáveis que contêm apenas Horas, Minutos e Segundos.
+- **hms:** Biblioteca especializada em tratar variáveis que contêm apenas Horas, Minutos e Segundos.
 
 ### 8.4 Gráficos e Visualização
 
-**ggplot2:** A ferramenta mais poderosa para criar gráficos estáticos e customizados (barras, linhas, dispersão).
+- **ggplot2:** A ferramenta mais poderosa para criar gráficos estáticos e customizados (barras, linhas, dispersão).
 
-**plotly:** Transforma os gráficos do ggplot2 em versões interativas (com zoom e leitura de valores ao passar o mouse).
+- **plotly:** Transforma os gráficos do ggplot2 em versões interativas (com zoom e leitura de valores ao passar o mouse).
 
 ### 8.5 Tabelas Interativas
 
-**DT:** Permite exibir tabelas no dashboard com recursos de busca, paginação e ordenação automática.
+- **DT:** Permite exibir tabelas no dashboard com recursos de busca, paginação e ordenação automática.
 
 ## 9. Integração com o Repositório
 
