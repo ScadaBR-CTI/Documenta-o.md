@@ -59,8 +59,10 @@ O pipeline de dados segue a seguinte sequência:
 * Geração de indicadores operacionais
 * Visualização via dashboard interativo
 
+## Fluxograma do sistema
+
   <p align="center">
-  <img src="img/Fluxo_Geral.png" alt="Fluxo Geral" width="70%">
+  <img src="img/Fluxo_Geral.png" alt="Fluxo Geral" width="90%">
   </p>
 
 ## 5. Modelagem Analítica
