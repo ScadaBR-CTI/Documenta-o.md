@@ -59,6 +59,10 @@ O pipeline de dados segue a seguinte sequência:
 * Geração de indicadores operacionais
 * Visualização via dashboard interativo
 
+  <p align="center">
+  <img src="img/Daigrama de Blocos.jpeg" alt="Fluxo_Geral" width="100%">
+  </p>
+
 ## 5. Modelagem Analítica
 
 O sistema opera principalmente sobre séries temporais estruturadas, permitindo:
