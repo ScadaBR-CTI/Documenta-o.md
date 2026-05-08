@@ -90,36 +90,41 @@ Os principais indicadores gerados incluem:
 * MySQL / banco de dados (armazenamento de dados)
 * R (manipulação de dados e análise estatística)
 
-### 7.1 Bibliotecas
+## 8 Bibliotecas
   
-shiny: É o motor principal; permite criar aplicativos web interativos usando apenas a linguagem R.
+**shiny:** É o motor principal; permite criar aplicativos web interativos usando apenas a linguagem R.
 
-shinythemes: Fornece "temas" visuais prontos para mudar as cores e fontes do dashboard com um clique.
+**shinythemes:** Fornece "temas" visuais prontos para mudar as cores e fontes do dashboard com um clique.
 
-Conexão e Banco de Dados
-DBI: Funciona como uma interface padrão para comunicação entre o R e diversos sistemas de bancos de dados.
+### 8.1 Conexão e Banco de Dados
 
-RMySQL: É o driver específico que permite ao R "falar" com o banco de dados MySQL/MariaDB do seu projeto.
+**DBI:** Funciona como uma interface padrão para comunicação entre o R e diversos sistemas de bancos de dados.
 
-Manipulação e Limpeza de Dados
-dplyr: Ferramenta essencial para manipular dados (filtrar linhas, selecionar colunas, agrupar e realizar cálculos).
+**RMySQL:** É o driver específico que permite ao R "falar" com o banco de dados MySQL/MariaDB do seu projeto.
 
-tidyr: Serve para organizar dados "bagunçados", permitindo remodelar tabelas (ex: transformar colunas em linhas).
+### 8.2 Manipulação e Limpeza de Dados
 
-Gestão de Tempo e Datas
-lubridate: Facilita a leitura e operações matemáticas com datas (ex: somar dias ou extrair o mês de um timestamp).
+**dplyr:** Ferramenta essencial para manipular dados (filtrar linhas, selecionar colunas, agrupar e realizar cálculos).
 
-hms: Biblioteca especializada em tratar variáveis que contêm apenas Horas, Minutos e Segundos.
+**tidyr:** Serve para organizar dados "bagunçados", permitindo remodelar tabelas (ex: transformar colunas em linhas).
 
-Gráficos e Visualização
-ggplot2: A ferramenta mais poderosa para criar gráficos estáticos e customizados (barras, linhas, dispersão).
+### 8.3 Gestão de Tempo e Datas
 
-plotly: Transforma os gráficos do ggplot2 em versões interativas (com zoom e leitura de valores ao passar o mouse).
+**lubridate:** Facilita a leitura e operações matemáticas com datas (ex: somar dias ou extrair o mês de um timestamp).
 
-Tabelas Interativas
-DT: Permite exibir tabelas no dashboard com recursos de busca, paginação e ordenação automática.
+**hms:** Biblioteca especializada em tratar variáveis que contêm apenas Horas, Minutos e Segundos.
 
-## 8. Integração com o Repositório
+### 8.4 Gráficos e Visualização
+
+**ggplot2:** A ferramenta mais poderosa para criar gráficos estáticos e customizados (barras, linhas, dispersão).
+
+**plotly:** Transforma os gráficos do ggplot2 em versões interativas (com zoom e leitura de valores ao passar o mouse).
+
+### 8.5 Tabelas Interativas
+
+**DT:** Permite exibir tabelas no dashboard com recursos de busca, paginação e ordenação automática.
+
+## 9. Integração com o Repositório
 
 Este repositório centraliza:
 
@@ -128,3 +133,13 @@ Este repositório centraliza:
 * Dashboards interativos
 * Documentação técnica do pipeline
 * Estrutura do banco de dados e consultas
+
+## 10. Conclusão
+
+O sistema apresentado integra de forma estruturada o monitoramento e análise de dados energéticos, desde a aquisição em campo via medidores e sistema SCADA até a disponibilização das informações em um ambiente analítico interativo.
+
+A arquitetura proposta garante confiabilidade no fluxo de dados por meio de etapas de validação, tratamento e padronização, assegurando que apenas informações consistentes sejam utilizadas no processamento. Além disso, a separação entre camadas de coleta, armazenamento, processamento e visualização contribui para maior organização, escalabilidade e facilidade de manutenção do sistema.
+
+A incorporação de análises estatísticas e indicadores energéticos permite a identificação de padrões de consumo e possíveis anomalias operacionais, apoiando a tomada de decisão orientada à eficiência energética.
+
+Dessa forma, a solução não apenas centraliza e organiza os dados, mas também os transforma em informação útil para suporte à gestão e otimização de recursos energéticos no ambiente do CTI.
