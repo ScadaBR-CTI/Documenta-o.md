@@ -90,7 +90,7 @@ Os principais indicadores gerados incluem:
 * MySQL / banco de dados (armazenamento de dados)
 * R (manipulação de dados e análise estatística)
 
-  ### 7.1 Bibliotecas
+### 7.1 Bibliotecas
   
 shiny: É o motor principal; permite criar aplicativos web interativos usando apenas a linguagem R.
 
