@@ -1,10 +1,10 @@
-# Visão Geral do Sistema
+# Documentação do Sistema
 
 ## 1. Contexto do Sistema
 
 O ScadaBR-CTI é uma solução de monitoramento e análise de dados operacionais baseada em dados provenientes do sistema supervisório ScadaBR. O sistema foi desenvolvido para suportar análise histórica de variáveis operacionais, com foco em eficiência energética, desempenho de infraestrutura e suporte à tomada de decisão técnica.
 
-### 1.1 Hierarquia de Distribuição e Monitoramento
+### 1.1 Hierarquia de Distribuição
 
 Para entender como os dados são coletados, é fundamental visualizar a topologia elétrica do CTI Renato Archer. O diagrama abaixo representa o fluxo de energia, desde a entrada pelo Sistema Interligado Nacional e concessionária (CPFL), passando pelos transformadores e geradores, até chegar às cargas críticas.
 
@@ -49,13 +49,12 @@ O processamento é realizado em R, com pipeline de transformação, limpeza e ag
 
 ## 4. Fluxo de Dados
 
-O pipeline de dados segue a seguinte sequência:
+O *pipeline* de dados segue a seguinte sequência:
 
 * Aquisição de sinais via ScadaBR
 * Registro dos dados em banco relacional
-* Extração via queries SQL em R
-* Pré-processamento (limpeza, normalização e tratamento de missing data)
-* Agregação temporal e construção de métricas
+* Extração via *queries* SQL em R
+* Pré-processamento (limpeza, normalização e tratamento de *missing data*)
 * Geração de indicadores operacionais
 * Visualização via dashboard interativo
 
@@ -70,25 +69,31 @@ O pipeline de dados segue a seguinte sequência:
 O sistema opera principalmente sobre séries temporais estruturadas, permitindo:
 
 * Agregações por minuto, hora, dia e semana
-* Comparações interperíodo (baseline vs atual)
+* Comparações interperíodo
 * Análise de tendência e sazonalidade
 * Segmentação por pontos de medição
 * Correlação entre variáveis operacionais
 
 ## 6. Indicadores Derivados
 
-Os principais indicadores gerados incluem:
+A partir do processamento das séries temporais e das análises realizadas sobre os dados operacionais e energéticos, o sistema gera indicadores consolidados para suporte ao monitoramento e avaliação de desempenho da infraestrutura monitorada.
 
-* Consumo energético agregado e segmentado
-* Perfil de carga por período operacional
-* Variabilidade de consumo (desvio e dispersão)
-* Eficiência relativa entre unidades monitoradas
+Entre os principais indicadores derivados implementados, destacam-se:
+
+* Consumo energético agregado por período operacional
+* Consumo segmentado por ponto de medição
+* Perfil de carga ao longo do dia, semana e horários de pico
+* Média, máximos e mínimos de consumo por intervalo temporal
+* Comparação entre períodos distintos para identificação de anomalias e mudanças de comportamento
+* Indicadores de tendência e sazonalidade das variáveis monitoradas
+
+Os indicadores são processados na camada analítica em linguagem R, utilizando consultas ao banco de dados MySQL e rotinas de agregação temporal, sendo posteriormente disponibilizados no dashboard interativo desenvolvido em Shiny.
   
 ## 7. Tecnológias Empregadas
 
-* ScadaBR (aquisição e supervisão industrial)
-* MySQL / banco de dados (armazenamento de dados)
-* R (manipulação de dados e análise estatística)
+* **ScadaBR:** Sistema supervisório (interface)
+* **MySQL:** banco de dados (armazenamento de dados)
+* **R / RStudio:** Linguagem de programação (manipulação de dados e análise estatística)
 
 ## 8 Bibliotecas
   
@@ -128,15 +133,12 @@ Os principais indicadores gerados incluem:
 
 Este repositório centraliza:
 
-* Scripts de extração e tratamento de dados
 * Modelos de análise em R
-* Dashboards interativos
 * Documentação técnica do pipeline
-* Estrutura do banco de dados e consultas
 
 ## 10. Conclusão
 
-O sistema apresentado integra de forma estruturada o monitoramento e análise de dados energéticos, desde a aquisição em campo via medidores e sistema SCADA até a disponibilização das informações em um ambiente analítico interativo.
+O sistema apresentado integra de forma estruturada a análise de dados energéticos, desde a aquisição em campo via medidores e sistema SCADA até a disponibilização das informações em um ambiente analítico interativo.
 
 A arquitetura proposta garante confiabilidade no fluxo de dados por meio de etapas de validação, tratamento e padronização, assegurando que apenas informações consistentes sejam utilizadas no processamento. Além disso, a separação entre camadas de coleta, armazenamento, processamento e visualização contribui para maior organização, escalabilidade e facilidade de manutenção do sistema.
 
