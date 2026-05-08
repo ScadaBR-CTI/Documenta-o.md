@@ -6,7 +6,7 @@ O ScadaBR-CTI é uma solução de monitoramento e análise de dados operacionais
 
 A arquitetura integra coleta, persistência e processamento de dados estruturados, permitindo exploração analítica em ambiente R.
 
-## Diagrama de Blocos
+### Diagrama de Blocos
 <p align="center">
   <img src="img/Daigrama de Blocos.jpeg" alt="Fluxograma ScadaBR CTI" width="100%">
 </p>
