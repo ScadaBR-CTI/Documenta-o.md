@@ -4,7 +4,7 @@
 
 O ScadaBR-CTI é uma solução de monitoramento e análise de dados operacionais baseada em dados provenientes do sistema supervisório ScadaBR. O sistema foi desenvolvido para suportar análise histórica de variáveis operacionais, com foco em eficiência energética, desempenho de infraestrutura e suporte à tomada de decisão técnica.
 
-## 1.1 Hierarquia de Distribuição e Monitoramento
+### 1.1 Hierarquia de Distribuição e Monitoramento
 
 Para entender como os dados são coletados, é fundamental visualizar a topologia elétrica do CTI Renato Archer. O diagrama abaixo representa o fluxo de energia, desde a entrada pelo Sistema Interligado Nacional e concessionária (CPFL), passando pelos transformadores e geradores, até chegar às cargas críticas.
 
