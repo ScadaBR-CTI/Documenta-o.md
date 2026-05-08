@@ -143,3 +143,5 @@ A arquitetura proposta garante confiabilidade no fluxo de dados por meio de etap
 A incorporação de análises estatísticas e indicadores energéticos permite a identificação de padrões de consumo e possíveis anomalias operacionais, apoiando a tomada de decisão orientada à eficiência energética.
 
 Dessa forma, a solução não apenas centraliza e organiza os dados, mas também os transforma em informação útil para suporte à gestão e otimização de recursos energéticos no ambiente do CTI.
+
+**[Página Inicial](https://github.com/ScadaBR-CTI)**
