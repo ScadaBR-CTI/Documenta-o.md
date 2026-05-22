@@ -20,6 +20,8 @@ Este mapeamento é o que permite ao ScadaBR-CTI:
   <img src="img/Daigrama de Blocos.jpeg" alt="Fluxograma ScadaBR CTI" width="100%">
 </p>
 
+---
+
 ## 2. Objetivo Técnico
 
 O sistema tem como objetivo principal a transformação de dados operacionais brutos em indicadores estruturados, permitindo:
@@ -30,6 +32,8 @@ O sistema tem como objetivo principal a transformação de dados operacionais br
 * Identificação de padrões sazonais e comportamentais
 * Suporte à detecção de anomalias operacionais
 * Geração de indicadores para eficiência energética
+
+---
 
 ## 3. Arquitetura do Sistema
 
@@ -46,6 +50,8 @@ Os dados são armazenados em banco de dados, estruturados em séries temporais e
 ### 3.3 Camada de Processamento e Visualização
 
 O processamento é realizado em R, com pipeline de transformação, limpeza e agregação dos dados. A visualização é implementada via Shiny, com suporte a gráficos dinâmicos e consultas interativas.
+
+---
 
 ## 4. Fluxo de Dados
 
@@ -64,6 +70,8 @@ O *pipeline* de dados segue a seguinte sequência:
   <img src="img/Fluxo_Geral.png" alt="Fluxo Geral" width="90%">
   </p>
 
+---
+
 ## 5. Modelagem Analítica
 
 O sistema opera principalmente sobre séries temporais estruturadas, permitindo:
@@ -73,6 +81,8 @@ O sistema opera principalmente sobre séries temporais estruturadas, permitindo:
 * Análise de tendência e sazonalidade
 * Segmentação por pontos de medição
 * Correlação entre variáveis operacionais
+
+---
 
 ## 6. Indicadores Derivados
 
@@ -88,12 +98,16 @@ Entre os principais indicadores derivados implementados, destacam-se:
 * Indicadores de tendência e sazonalidade das variáveis monitoradas
 
 Os indicadores são processados na camada analítica em linguagem R, utilizando consultas ao banco de dados MySQL e rotinas de agregação temporal, sendo posteriormente disponibilizados no dashboard interativo desenvolvido em Shiny.
+
+---
   
 ## 7. Tecnológias Empregadas
 
 * **ScadaBR:** Sistema supervisório (interface)
 * **MySQL:** banco de dados (armazenamento de dados)
 * **R / RStudio:** Linguagem de programação (manipulação de dados e análise estatística)
+
+---
 
 ## 8 Bibliotecas
   
@@ -129,12 +143,16 @@ Os indicadores são processados na camada analítica em linguagem R, utilizando 
 
 - **DT:** Permite exibir tabelas no dashboard com recursos de busca, paginação e ordenação automática.
 
+---
+
 ## 9. Integração com o Repositório
 
 Este repositório centraliza:
 
 * Modelos de análise em R
 * Documentação técnica do pipeline
+
+---
 
 ## 10. Conclusão
 
@@ -146,4 +164,6 @@ A incorporação de análises estatísticas e indicadores energéticos permite a
 
 Dessa forma, a solução não apenas centraliza e organiza os dados, mas também os transforma em informação útil para suporte à gestão e otimização de recursos energéticos no ambiente do CTI.
 
-**[Página Inicial](https://github.com/ScadaBR-CTI)**
+---
+
+- **[Página Inicial](https://github.com/ScadaBR-CTI)**
